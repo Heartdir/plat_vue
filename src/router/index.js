@@ -18,7 +18,7 @@ const publicRoutes = [
         name: 'profile',
         component: () => import(/* webpackChunkName: "profile" */ '@/views/profile/index'),
         meta: {
-          title: '数据中心',
+          title: '个人中心',
           icon: 'personnel'
         }
       }, {
@@ -26,7 +26,7 @@ const publicRoutes = [
         name: 'data',
         component: () => import(/* webpackChunkName: "data" */ '@/views/data/index'),
         meta: {
-          title: '数据中心',
+          title: '数据管理',
           icon: 'data'
         }
       }, {
@@ -45,7 +45,7 @@ const publicRoutes = [
     component: layout,
     redirect: '/product/submit',
     meta: {
-      title: '数据上传',
+      title: '模型训练',
       icon: 'product'
     },
     children: [
@@ -81,7 +81,7 @@ const publicRoutes = [
     component: layout,
     redirect: '/workshop/submit',
     meta: {
-      title: '车间任务',
+      title: '模型评估',
       icon: 'workshop'
     },
     children: [
@@ -117,7 +117,7 @@ const publicRoutes = [
     component: layout,
     redirect: '/monitor/assignment',
     meta: {
-      title: '服务流程监测',
+      title: '模型管理',
       icon: 'tree'
     },
     children: [
